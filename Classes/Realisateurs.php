@@ -21,7 +21,7 @@ class Realisateurs extends Personnes
     public function Realisations(){
 
         foreach($this->_films as $film){
-            echo "".$film->get_titre()." Sortie en : ".$film->get_sortie()->format('Y')."";
+            echo "".$film->get_titre()." sortie en : ".$film->get_sortie()->format('Y').""."<br>";
         }
     }
 }

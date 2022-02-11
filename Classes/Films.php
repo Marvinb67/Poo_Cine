@@ -14,6 +14,7 @@ Class Films
         $this->_sortie = new DateTime($sortie);
         $this->_duree = $duree;
         $this->_real = $real;
+        $this->_acteurs = $acteurs;
         $real->ajouteFilms($this);
         $acteurs->ajoutFilms($this);
     }

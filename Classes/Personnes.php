@@ -1,6 +1,6 @@
 <?php
 
-class Personnes
+abstract class Personnes
 {
    protected string $_nom;
    protected string $_prenom;

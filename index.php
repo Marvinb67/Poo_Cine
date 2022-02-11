@@ -13,18 +13,20 @@ $burton = new Realisateurs('Burton', 'Tim', 'Homme', '1958-08-25');
 
 $batman = new Films('Batman', '1989-09-13', 126, $burton, $keaton);
 
+$hollow = new Films('Sleepy Hollow', '1999-11-19', 106, $burton, $kim);
 echo '<h2> '.$batman->get_titre().' '.$batman->get_sortie()->format('Y').' </h2>';
 
 echo '<h4> Acteurs : </h4>';
 
+echo $keaton.'<br>';
 // echo $keaton.'<br>';
 
 // echo $batman.'<br>';
-
 // echo '<h3>Filmographie de '.$keaton->get_prenom().' '.$keaton->get_nom().'</h3>';
 // echo $keaton->Filmographie().'<br>';
 
 // echo '<h3> Films réaliser par '.$alejandro->get_prenom().' '.$alejandro->get_nom().'</h3>';
-// echo $alejandro->Realisations();
-// // var_dump($keaton);
+echo '<h3>Films réaliser par : '.$burton->get_prenom().' '.$burton->get_nom().'</h3> ';
+echo $burton->Realisations();
+var_dump($keaton);
 // // // var_dump($burton);

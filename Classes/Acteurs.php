@@ -27,6 +27,6 @@ class Acteurs extends Personnes
 
     public function __toString()
     {
-        return "Acteur : $this->_prenom $this->_nom, Sexe : $this->_sexe, Age : ".$this->Age()->format('%Y ans').'';
+        return "Acteur / Actrice : $this->_prenom $this->_nom, Sexe : $this->_sexe, Age : ".$this->Age()->format('%Y ans').'';
     }
 }
