@@ -3,12 +3,11 @@
 class Roles
 {
     private string $_perso;
-    private Acteurs $_acteurs;
-    private Films $_films;
+    private array $_acteurs;
 
-    public function __construct(string $perso, Films $films){
+    public function __construct(string $perso){
         $this->_perso = $perso;
-        $this->_films = $films;
+        $this->_acteurs = [];
     }
 
     public function get_perso()

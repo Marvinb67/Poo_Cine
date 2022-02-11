@@ -79,10 +79,10 @@ Class Films
         return $this;
     }
 
-    public function Casting
-    {
-        
-    }
+    // public function Casting
+    // {
+
+    // }
     public function __tostring()
     {
         return "Film : $this->_titre<br> Date de sortie : ".$this->_sortie->format('Y-m-d')."<br> Durée : $this->_duree  minutes<br> Réalisateur : ".$this->_real->get_prenom()." ".$this->_real->get_nom()."";
